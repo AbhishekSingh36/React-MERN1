@@ -41,10 +41,15 @@ class DogPics extends Component {
         </label>
         <div>
           <div>
-            <img src={this.state.imgLink} />
+            <img src={this.state.imgLink} alt="NaN" height="400" />
           </div>
           <div>
-            <button>Next</button>
+            <button
+              onClick={() => this.renderDogImage(this.state.breed)}
+              style={{ padding: "11px" }}
+            >
+              Next
+            </button>
           </div>
         </div>
       </div>
