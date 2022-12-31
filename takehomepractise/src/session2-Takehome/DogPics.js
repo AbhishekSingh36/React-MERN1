@@ -4,8 +4,24 @@ import React, { Component } from "react";
 class DogPics extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.defaultBreed = "random";
+    this.state = { breed: this.defaultBreed, imgLink: "" };
   }
+  renderDogImage = async (breed) => {
+    let url = "";
+    if (breed === this.defaultBreed) {
+      url = "https://dog.ceo/api/breeds/image/random";
+    } else {
+      url = "https://dog.ceo/api/breeds/image/random";
+    }
+    const res = await axios.get(url);
+    const imgLink = res.data.message;
+
+    this.setState({
+      imgLink: imgLink
+    });
+  };
+
   render() {
     return (
       <div>
@@ -23,6 +39,14 @@ class DogPics extends Component {
             <option value="husky">Husky</option>
           </select>
         </label>
+        <div>
+          <div>
+            <img src={this.state.imgLink} />
+          </div>
+          <div>
+            <button>Next</button>
+          </div>
+        </div>
       </div>
     );
   }
