@@ -9,7 +9,20 @@ class DogPics extends Component {
   render() {
     return (
       <div>
-        <label>Select a Breed</label>
+        <label>
+          Select a Breed
+          <select
+            value={this.state.breed}
+            onChange={(e) => this.handleBreedChange(e)}
+            style={{ marginBottom: "10px" }}
+          >
+            <option></option>
+            <option></option>
+            <option></option>
+            <option></option>
+            <option></option>
+          </select>
+        </label>
       </div>
     );
   }
