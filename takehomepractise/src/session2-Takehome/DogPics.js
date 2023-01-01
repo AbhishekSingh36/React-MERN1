@@ -16,11 +16,11 @@ class DogPics extends Component {
             onChange={(e) => this.handleBreedChange(e)}
             style={{ marginBottom: "10px" }}
           >
-            <option></option>
-            <option></option>
-            <option></option>
-            <option></option>
-            <option></option>
+            <option value={this.defaultBreed}>Random</option>
+            <option value="beagle">Beagle</option>
+            <option value="boxer">Boxer</option>
+            <option value="dalmatian">Dalmatian</option>
+            <option value="husky">Husky</option>
           </select>
         </label>
       </div>
