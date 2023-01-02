@@ -7,6 +7,11 @@ class DogPics extends Component {
     this.defaultBreed = "random";
     this.state = { breed: this.defaultBreed, imgLink: "" };
   }
+
+  componentDidMount() {
+    this.renderDogImage(this.state.breed);
+  }
+
   renderDogImage = async (breed) => {
     let url = "";
     if (breed === this.defaultBreed) {
