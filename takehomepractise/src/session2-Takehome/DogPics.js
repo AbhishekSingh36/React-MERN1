@@ -51,8 +51,8 @@ class DogPics extends Component {
             style={{ marginBottom: "10px" }}
           >
             <option value={this.defaultBreed}>Random</option>
-            <option value="beagle">Beagle</option>
-            <option value="boxer">Boxer</option>
+            <option value="beagle">Beagle Doggie</option>
+            <option value="boxer">Boxer Doggie</option>
             <option value="dalmatian">Dalmatian</option>
             <option value="husky">Husky</option>
           </select>
