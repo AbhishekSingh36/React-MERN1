@@ -11,6 +11,7 @@ class DogPics extends Component {
   componentDidMount() {
     this.renderDogImage(this.state.breed);
   }
+  componentDidCatch() {}
 
   renderDogImage = async (breed) => {
     let url = "";
@@ -24,6 +25,13 @@ class DogPics extends Component {
 
     this.setState({
       imgLink: imgLink
+    });
+  };
+
+  handleBreedChange = (e) => {
+    const newBreed = e.target.value;
+    this.setState({
+      breed: newBreed
     });
   };
 
