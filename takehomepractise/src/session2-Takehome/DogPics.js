@@ -59,7 +59,7 @@ class DogPics extends Component {
         </label>
         <div>
           <div>
-            <img src={this.state.imgLink} alt="Not available" height="400" />
+            <img src={this.state.imgLink} alt="Not available" height="404" />
           </div>
           <div>
             <button
