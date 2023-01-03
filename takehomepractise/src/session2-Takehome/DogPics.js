@@ -53,7 +53,7 @@ class DogPics extends Component {
             <option value={this.defaultBreed}>Random</option>
             <option value="beagle">Beagle Doggie</option>
             <option value="boxer">Boxer Doggie</option>
-            <option value="dalmatian">Dalmatian</option>
+            <option value="dalmatian">Dalmatian Doggie</option>
             <option value="husky">Husky</option>
           </select>
         </label>
