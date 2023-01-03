@@ -11,7 +11,8 @@ class DogPics extends Component {
   componentDidMount() {
     this.renderDogImage(this.state.breed);
   }
-  componentDidCatch(prevProps, prevState) {
+
+  componentDidUpdate(prevProps, prevState) {
     if (prevState.breed !== this.state.breed) {
       this.renderDogImage(this.state.breed);
     }
@@ -22,7 +23,7 @@ class DogPics extends Component {
     if (breed === this.defaultBreed) {
       url = "https://dog.ceo/api/breeds/image/random";
     } else {
-      url = "https://dog.ceo/api/breeds/image/random";
+      url = `https://dog.ceo/api/breed/${breed}/images/random`;
     }
     const res = await axios.get(url);
     const imgLink = res.data.message;
@@ -43,7 +44,7 @@ class DogPics extends Component {
     return (
       <div>
         <label>
-          Select a Breed
+          Select a breed:
           <select
             value={this.state.breed}
             onChange={(e) => this.handleBreedChange(e)}
@@ -58,12 +59,12 @@ class DogPics extends Component {
         </label>
         <div>
           <div>
-            <img src={this.state.imgLink} alt="NaN" height="400" />
+            <img src={this.state.imgLink} alt="Not available" height="400" />
           </div>
           <div>
             <button
               onClick={() => this.renderDogImage(this.state.breed)}
-              style={{ padding: "11px" }}
+              style={{ padding: "5px" }}
             >
               Next
             </button>
