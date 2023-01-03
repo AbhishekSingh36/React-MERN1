@@ -54,7 +54,7 @@ class DogPics extends Component {
             <option value="beagle">Beagle Doggie</option>
             <option value="boxer">Boxer Doggie</option>
             <option value="dalmatian">Dalmatian Doggie</option>
-            <option value="husky">Husky</option>
+            <option value="husky">Husky Doggie</option>
           </select>
         </label>
         <div>
