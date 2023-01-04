@@ -11,7 +11,11 @@ class DogPics extends Component {
   componentDidMount() {
     this.renderDogImage(this.state.breed);
   }
-  componentDidCatch() {}
+  componentDidCatch(prevProps, prevState) {
+    if (prevState.breed !== this.state.breed) {
+      this.renderDogImage(this.state.breed);
+    }
+  }
 
   renderDogImage = async (breed) => {
     let url = "";
@@ -59,7 +63,7 @@ class DogPics extends Component {
           <div>
             <button
               onClick={() => this.renderDogImage(this.state.breed)}
-              style={{ padding: "10px" }}
+              style={{ padding: "11px" }}
             >
               Next
             </button>
