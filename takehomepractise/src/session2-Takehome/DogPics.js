@@ -44,7 +44,7 @@ class DogPics extends Component {
     return (
       <div>
         <label>
-          Select Your Doggie:
+          <h2>Select Your Doggie:</h2>
           <select
             value={this.state.breed}
             onChange={(e) => this.handleBreedChange(e)}
