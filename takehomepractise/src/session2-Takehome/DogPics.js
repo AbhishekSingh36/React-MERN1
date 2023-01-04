@@ -48,7 +48,7 @@ class DogPics extends Component {
           <select
             value={this.state.breed}
             onChange={(e) => this.handleBreedChange(e)}
-            style={{ marginBottom: "10px" }}
+            style={{ marginBottom: "11px" }}
           >
             <option value={this.defaultBreed}>Random</option>
             <option value="beagle">Beagle Doggie</option>
