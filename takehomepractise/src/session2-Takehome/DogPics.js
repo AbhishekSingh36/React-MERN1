@@ -64,7 +64,7 @@ class DogPics extends Component {
           <div>
             <button
               onClick={() => this.renderDogImage(this.state.breed)}
-              style={{ padding: "5px" }}
+              style={{ padding: "8px" }}
             >
               Next
             </button>
