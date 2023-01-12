@@ -15,6 +15,7 @@ class UserData extends Component {
       }
     };
   }
+
   showData = async (id) => {
     let res = await axios
       .get(`https://reqres.in/api/users/${id}`)
@@ -25,29 +26,31 @@ class UserData extends Component {
           console.log("Error", error.message);
         }
       });
-      if (res) {
-        let userData = res.data.data;
-        this.setState({
-          userData: {
-            id: id,
-            email: userData.email,
-            firstName: userData.first_name,
-            lastName: userData.last_name,
-            imageLink: userData.avatar
-          }
-        });
-      }
-    };
-    render() {
-        return (
-          <div>
-            <button
-              style={{ margin: "0px 10px 0px 0px", padding: "10px" }}
-              onClick={() => this.showData(1)}
-            >
-              1
-            </button>
-            <button
+
+    if (res) {
+      let userData = res.data.data;
+      this.setState({
+        userData: {
+          id: id,
+          email: userData.email,
+          firstName: userData.first_name,
+          lastName: userData.last_name,
+          imageLink: userData.avatar
+        }
+      });
+    }
+  };
+
+  render() {
+    return (
+      <div>
+        <button
+          style={{ margin: "0px 10px 0px 0px", padding: "10px" }}
+          onClick={() => this.showData(1)}
+        >
+          1
+        </button>
+        <button
           style={{ margin: "0px 10px 0px 0px", padding: "10px" }}
           onClick={() => this.showData(2)}
         >
@@ -77,3 +80,9 @@ class UserData extends Component {
           src={this.state.userData.imageLink}
           alt="Not available"
         />
+      </div>
+    );
+  }
+}
+
+
