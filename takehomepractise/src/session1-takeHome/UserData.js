@@ -25,4 +25,16 @@ class UserData extends Component {
           console.log("Error", error.message);
         }
       });
-    }}
+      if (res) {
+        let userData = res.data.data;
+        this.setState({
+          userData: {
+            id: id,
+            email: userData.email,
+            firstName: userData.first_name,
+            lastName: userData.last_name,
+            imageLink: userData.avatar
+          }
+        });
+      }
+    };
