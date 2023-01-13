@@ -59,3 +59,9 @@ class UserData extends Component {
         >
           3
         </button>
+        <button
+          style={{ margin: "0px 10px 0px 0px", padding: "10px" }}
+          onClick={() => this.showData(100)}
+        >
+          100
+        </button>
