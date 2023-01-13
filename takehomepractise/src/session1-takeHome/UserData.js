@@ -38,3 +38,12 @@ class UserData extends Component {
         });
       }
     };
+    render() {
+        return (
+          <div>
+            <button
+              style={{ margin: "0px 10px 0px 0px", padding: "10px" }}
+              onClick={() => this.showData(1)}
+            >
+              1
+            </button>
