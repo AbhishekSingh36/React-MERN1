@@ -72,3 +72,8 @@ class UserData extends Component {
             {`${this.state.userData.firstName} ${this.state.userData.lastName}`}
           </li>
         </ul>
+        <img
+          width="200"
+          src={this.state.userData.imageLink}
+          alt="Not available"
+        />
