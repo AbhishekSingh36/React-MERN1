@@ -65,3 +65,10 @@ class UserData extends Component {
         >
           100
         </button>
+        <ul>
+          <li>Email: {this.state.userData.email}</li>
+          <li>
+            Name:{" "}
+            {`${this.state.userData.firstName} ${this.state.userData.lastName}`}
+          </li>
+        </ul>
