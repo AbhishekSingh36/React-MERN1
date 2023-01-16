@@ -6,6 +6,7 @@ function App() {
   return (
     <div className="App">
       <h1>Cart</h1>
+      <h2>Items Added</h2>
       <CartItem />
     </div>
   );

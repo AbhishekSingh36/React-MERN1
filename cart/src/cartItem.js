@@ -6,7 +6,7 @@ class CartItem extends React.Component{
         return(
             <div className="cart-item">
                 <div className="left-block">
-                    <img src={styles.image} alt="img"/>
+                    <img src={styles.image} alt="imgage"/>
                 </div>
                 <div className="right-block">
                     <h1>Cart Items</h1>
