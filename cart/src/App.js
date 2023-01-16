@@ -12,3 +12,6 @@ function App() {
 }
 
 export default App;
+
+
+//export 'default' (imported as 'CartItem') was not found in './CartItem' (module has no exports)

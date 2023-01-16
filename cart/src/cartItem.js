@@ -1,16 +1,18 @@
 import React from "react";
+import img from './shephard.jpg'
 
 class CartItem extends React.Component{
     render(){
         return(
             <div className="cart-item">
                 <div className="left-block">
-                    <img />
+                    <img src={styles.image} alt="img"/>
                 </div>
                 <div className="right-block">
-                    <div>Phone</div>
-                    <div>Rs 999</div>
-                    <div>Quantity</div>
+                    <h1>Cart Items</h1>
+                    <div style={ {fontSize: 25} }>Phone</div>
+                    <div style = { {color: '#777'} }>Rs 999</div>
+                    <div style = { {color: '#777'} }>Quantity</div>
                     <div className="cart-item-actions">
                         {/*buttons*/}
                     </div>
@@ -19,3 +21,17 @@ class CartItem extends React.Component{
         );
     }
 }
+
+
+// style elements using objects
+const styles = {
+    image: {
+        height: "110px",
+        width: "110px",
+        borderRadius: 4,
+        backgroundColor: '#ccc'
+    }
+}
+
+
+export default CartItem
