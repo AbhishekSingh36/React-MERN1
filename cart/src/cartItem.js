@@ -2,19 +2,32 @@ import React from "react";
 import img from './shephard.jpg'
 
 class CartItem extends React.Component{
+    constructor(){
+        super();
+        this.state = {
+            price: 999,
+            title: 'MacBook',
+            Quantity: 1,
+            img: ''
+        }
+    }
     render(){
+        const { price , title , Quantity} = this.state;
         return(
             <div className="cart-item">
                 <div className="left-block">
-                    <img src={styles.image} alt="imgage"/>
+                    <img src={styles.image} alt="imgage" />
                 </div>
                 <div className="right-block">
                     <h1>Cart Items</h1>
-                    <div style={ {fontSize: 25} }>Phone</div>
-                    <div style = { {color: '#777'} }>Rs 999</div>
-                    <div style = { {color: '#777'} }>Quantity</div>
+                    <div style={ {fontSize: 25} }>{title}</div>
+                    <div style = { {color: '#777'} }>{Quantity}</div>
+                    <div style = { {color: '#777'} }>{price}</div>
                     <div className="cart-item-actions">
                         {/*buttons*/}
+                        <img alt="increase" className="actionicons" src="https://cdn-icons-png.flaticon.com/128/2332/2332471.png" />
+                        <img alt="decrease" className="actionicons" src="https://cdn-icons-png.flaticon.com/128/2331/2331942.png" />
+                        <img alt="delete" className="actionicons" src="https://cdn-icons-png.flaticon.com/128/3221/3221897.png" />
                     </div>
                 </div>
             </div>
@@ -26,8 +39,8 @@ class CartItem extends React.Component{
 // style elements using objects
 const styles = {
     image: {
-        height: "110px",
-        width: "110px",
+        height: "100",
+        width: "100",
         borderRadius: 4,
         backgroundColor: '#ccc'
     }
