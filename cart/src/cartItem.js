@@ -23,7 +23,7 @@ class CartItem extends React.Component{
         //set state form2 {shallow merging}
         this.setState((prevState) => {
             return {
-                Quantity: prevState.Quantity + 2
+                Quantity: prevState.Quantity + 1
             }
         })
     }
