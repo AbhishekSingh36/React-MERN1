@@ -15,15 +15,25 @@ class CartItem extends React.Component{
     increaseQuantity = () => {
         // this.state.Quantity += 1;
         //console.log('this',this.state)
-        //set state form1
+        //set state form1 
+        // If we don't require prevous state we use object form
         // this.setState({
         //     Quantity: this.state.Quantity + 1
         // })
 
         //set state form2 {shallow merging}
+        // If we require previous state we use function form
         this.setState((prevState) => {
             return {
                 Quantity: prevState.Quantity + 1
+            }
+        })
+    }
+    decreaseQuantity = () => {
+        
+        this.setState((prevState) => {
+            return {
+                Quantity: prevState.Quantity - 1
             }
         })
     }
