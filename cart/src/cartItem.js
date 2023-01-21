@@ -13,7 +13,19 @@ class CartItem extends React.Component{
         // this.increaseQuantity = this.increaseQuantity.bind(this)
     } 
     increaseQuantity = () => {
-        console.log('this',this.state)
+        // this.state.Quantity += 1;
+        //console.log('this',this.state)
+        //set state form1
+        // this.setState({
+        //     Quantity: this.state.Quantity + 1
+        // })
+
+        //set state form2 {shallow merging}
+        this.setState((prevState) => {
+            return {
+                Quantity: prevState.Quantity + 2
+            }
+        })
     }
     render(){
         const { price , title , Quantity} = this.state;
