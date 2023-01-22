@@ -11,7 +11,21 @@ class CartItem extends React.Component{
             img: ''
         }
         // this.increaseQuantity = this.increaseQuantity.bind(this)
+        this.testing()
     } 
+
+    testing (){
+        const promise = new promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve("done")
+            }, 5000)
+        })
+        promise.then(() => {
+            this.setState({Quantity: 100});
+            console.log('state', this.state)
+
+        })
+    }
     increaseQuantity = () => {
         // this.state.Quantity += 1;
         //console.log('this',this.state)
@@ -19,7 +33,7 @@ class CartItem extends React.Component{
         // If we don't require prevous state we use object form
         // this.setState({
         //     Quantity: this.state.Quantity + 1
-        // })
+        // }, () ={})
 
         //set state form2 {shallow merging}
         // If we require previous state we use function form
@@ -30,7 +44,10 @@ class CartItem extends React.Component{
         })
     }
     decreaseQuantity = () => {
-        
+        const {Quantity} = this.state;
+        if(Quantity === 0){
+            return;
+        }
         this.setState((prevState) => {
             return {
                 Quantity: prevState.Quantity - 1
