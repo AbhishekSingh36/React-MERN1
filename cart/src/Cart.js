@@ -4,7 +4,11 @@ import CartItem from "./CartItem"
 class Cart extends React.Component {
     render () {
         return (
-            <div>CART</div>
+            <div className="cart">
+                <CartItem />
+                <CartItem />
+                <CartItem />
+            </div>
         )
     }
 }
