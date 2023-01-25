@@ -13,10 +13,11 @@ class Cart extends React.Component {
                 {arr.map((item) => {
                     return item + 5
                 })}
+                
         
             </div>
         )
     }
 }
-
+// Iterating array in JSX 
 export default Cart;
