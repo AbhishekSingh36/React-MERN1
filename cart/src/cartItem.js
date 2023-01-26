@@ -18,10 +18,10 @@ class CartItem extends React.Component{
         const promise = new promise((resolve, reject) => {
             setTimeout(() => {
                 resolve("done")
-            }, 5000)
+            }, 6000)
         })
         promise.then(() => {
-            this.setState({Quantity: 100});
+            this.setState({Quantity: 1});
             console.log('state', this.state)
 
         })
