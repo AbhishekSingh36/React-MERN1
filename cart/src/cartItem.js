@@ -7,7 +7,7 @@ class CartItem extends React.Component{
         this.state = {
             price: 999,
             title: 'MacBook Pro',
-            Quantity: 1,
+            Quantity: 3,
             img: ''
         }
         // this.increaseQuantity = this.increaseQuantity.bind(this)
