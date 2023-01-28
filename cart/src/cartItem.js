@@ -59,11 +59,11 @@ class CartItem extends React.Component{
         return(
             <div className="cart-item">
                 <div className="left-block">
-                    <img src={styles.image} alt="imgage" />
+                    <img src={styles.image} alt="image" />
                 </div>
                 <div className="right-block">
                     <h1>Cart Items</h1>
-                    <div style={ {fontSize: 25} }>{title}</div>
+                    <div style={ {fontSize: 22} }>{title}</div>
                     <div style = { {color: '#777'} }>{Quantity}</div>
                     <div style = { {color: '#777'} }>{price}</div>
                     <div className="cart-item-actions">

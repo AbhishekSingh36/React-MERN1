@@ -7,7 +7,7 @@ class Cart extends React.Component {
         return (
         
             <div className="cart">
-                <CartItem Quanity={1} price={999} title={'Watch/>
+                <CartItem Quanity={1} price={999} title={'Watch'} img={''}/>
         
             </div>
         )
