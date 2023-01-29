@@ -5,7 +5,11 @@ import Button from '../src/components/Button';
 
 class App extends React.Component{
     render(){
-        return <div>   Hello World</div>
+        return <div>
+            <Header/>
+            <Display/>
+            <Button/>
+        </div>
     }
 }
 
