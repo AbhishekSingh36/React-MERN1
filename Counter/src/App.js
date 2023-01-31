@@ -14,6 +14,7 @@ class App extends React.Component{
             <Button/>
             <Header/>
             <Display/>
+            <Button/>
         </div>
     }
 }
