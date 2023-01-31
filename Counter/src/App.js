@@ -13,6 +13,7 @@ class App extends React.Component{
             <Display/>
             <Button/>
             <Header/>
+            <Display/>
         </div>
     }
 }
