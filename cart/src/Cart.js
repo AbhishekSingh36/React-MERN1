@@ -10,7 +10,8 @@ class Cart extends React.Component {
                     price: 99,
                     title: 'Watch',
                     Quanity: 1,
-                    img: ''
+                    img: '',
+                    id: 1
                 },
                 {
                     price: 999,
@@ -36,7 +37,7 @@ class Cart extends React.Component {
             <div className="cart">
                 
                 {products.map((products) => {
-                    return <CartItem products = {products}/>
+                    return <CartItem products = {products} key={products.id}/>
                 })}
         
             </div>
