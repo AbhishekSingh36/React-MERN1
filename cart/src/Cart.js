@@ -7,8 +7,20 @@ class Cart extends React.Component {
         this.state = {
             products: [
                 {
+                    price: 99,
+                    title: 'Watch',
+                    Quanity: 1,
+                    img: ''
+                },
+                {
                     price: 999,
-                    title: Mobile,
+                    title: 'Mobile',
+                    Quanity: 1,
+                    img: ''
+                },
+                {
+                    price: 999,
+                    title: 'Laptop',
                     Quanity: 1,
                     img: ''
                 },
