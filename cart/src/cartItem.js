@@ -2,30 +2,19 @@ import React from "react";
 import img from './shephard.jpg'
 
 class CartItem extends React.Component{
-    constructor(){
-        super();
-        this.state = {
-            price: 999,
-            title: 'MacBook Pro',
-            Quantity: 3,
-            img: ''
-        }
-        // this.increaseQuantity = this.increaseQuantity.bind(this)
-        this.testing()
-    } 
 
-    testing (){
-        const promise = new promise((resolve, reject) => {
-            setTimeout(() => {
-                resolve("done")
-            }, 6000)
-        })
-        promise.then(() => {
-            this.setState({Quantity: 1});
-            console.log('state', this.state)
+    // testing (){
+    //     const promise = new promise((resolve, reject) => {
+    //         setTimeout(() => {
+    //             resolve("done")
+    //         }, 6000)
+    //     })
+    //     promise.then(() => {
+    //         this.setState({Quantity: 1});
+    //         console.log('state', this.state)
 
-        })
-    }
+    //     })
+    // }
     increaseQuantity = () => {
         // this.state.Quantity += 1;
         //console.log('this',this.state)
@@ -56,7 +45,7 @@ class CartItem extends React.Component{
     }
     render(){
         console.log('this.props' , this.props)
-        const { price , title , Quantity} = this.state;
+        const { price , title , Quantity} = this.props;
         return(
             <div className="cart-item">
                 <div className="left-block">
