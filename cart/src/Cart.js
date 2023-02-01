@@ -17,13 +17,15 @@ class Cart extends React.Component {
                     price: 999,
                     title: 'Mobile',
                     Quanity: 1,
-                    img: ''
+                    img: '',
+                    id:2
                 },
                 {
                     price: 999,
                     title: 'Laptop',
                     Quanity: 1,
-                    img: ''
+                    img: '',
+                    id:3
                 },
             ]
         }
