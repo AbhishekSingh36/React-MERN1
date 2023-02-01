@@ -30,11 +30,14 @@ class Cart extends React.Component {
         this.testing()
     } 
     render () {
-        
+        const { products} = this.state;
         return (
         
             <div className="cart">
-                <CartItem Quanity={1} price={999} title={'Watch'} img={''}/>
+                
+                {products.map((products) => {
+                    return <CartItem products = {products}/>
+                })}
         
             </div>
         )
