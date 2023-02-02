@@ -12,9 +12,7 @@ class App extends React.Component{
             <Header/>
             <Display/>
             <Button/>
-            <Header/>
-            <Display/>
-            <Button/>
+
         </div>
     }
 }
