@@ -10,6 +10,7 @@ class App extends React.Component{
     render(){
         return <div>
             <Header headerText= 'Counter Application' />
+            <Header headerText= 'Counter Application2 Props i.e Custom attributes' /> 
             <Display/>
             <Button/>
 
