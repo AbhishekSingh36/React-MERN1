@@ -11,7 +11,7 @@ class App extends React.Component{
         return <div>
             <Header headerText= 'Counter Application' />
             <Header headerText= 'Counter Application2 Props i.e Custom attributes' /> 
-            <Display/>
+            <Display displayText = 'Display'/>
             <Button/>
 
         </div>
