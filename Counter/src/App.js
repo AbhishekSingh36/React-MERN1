@@ -17,9 +17,9 @@ class App extends React.Component{
             <Display displayText = 'Display'/>  
             <Button handleButtonFunction={()=> console.log('plus Button')} buttonText = '-'/> */}
 
-            <Text/>
+            <Text displayText="Counter Application"/>
             <Button/>
-            <Text/>
+            <Text displayText="12"/>
             <Button/>
 
 
