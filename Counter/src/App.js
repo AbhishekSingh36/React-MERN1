@@ -10,11 +10,18 @@ import { render } from "react-dom";
 class App extends React.Component{
     render(){
         return <div>
-            <Header headerText= 'Counter Application' />
+            {/* Props Example */}
+            {/* <Header headerText= 'Counter Application' />
             <Header headerText= 'Counter Application2 Props i.e Custom attributes' /> 
             <Button handleButtonFunction={()=> console.log('plus Button')} buttonText = '+'/>
             <Display displayText = 'Display'/>  
-            <Button handleButtonFunction={()=> console.log('plus Button')} buttonText = '-'/>
+            <Button handleButtonFunction={()=> console.log('plus Button')} buttonText = '-'/> */}
+
+            <Text/>
+            <Button/>
+            <Text/>
+            <Button/>
+
 
         </div>
     }
