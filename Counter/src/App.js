@@ -13,10 +13,10 @@ class App extends React.Component{
         this.handleIncrement = this.handleIncrement.bind(this)
         this.handleDecrement = this.handleDecrement.bind(this)
     }
-    handleIncrement(){
+    handleIncrement = () => {
         console.log('Increment ::')
     }
-    handleDecrement(){
+    handleDecrement = () => {
         console.log('Decrement ::')
     }
     render(){
