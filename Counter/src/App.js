@@ -11,7 +11,7 @@ class App extends React.Component{
     constructor(props){
         super(props)
         this.state = {
-            counter: 0;
+            counter: 0
         }
     }
     handleIncrement = () => {
@@ -25,6 +25,9 @@ class App extends React.Component{
         }))
     }
     render(){
+        if(this.state.counter === 10){
+            return <div>Congrats !! You have reached 10</div>
+        }
         return <div>
             {/* Props Example */}
             {/* <Header headerText= 'Counter Application' />
@@ -33,9 +36,6 @@ class App extends React.Component{
             <Display displayText = 'Display'/>  
             <Button handleButtonFunction={()=> console.log('plus Button')} buttonText = '-'/> */}
 
-            if(this.state.counter === 10) {
-                return <div>Congrats !! You have reached 10</div>
-            }
             <Text displayText="Counter Application"/>
             <Button btnClickHandler= {this.handleDecrement} btnText="-"/>
             <Text displayText= {this.state.counter}/>
