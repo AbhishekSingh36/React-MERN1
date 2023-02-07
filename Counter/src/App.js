@@ -15,10 +15,14 @@ class App extends React.Component{
         }
     }
     handleIncrement = () => {
-        console.log('Increment ::')
+        this.setState((prevState)=>({
+            counter: prevState.counter + 1
+        }))
     }
     handleDecrement = () => {
-        console.log('Decrement ::')
+        this.setState((prevState)=>({
+            counter: prevState.counter - 1
+        }))
     }
     render(){
         return <div>
