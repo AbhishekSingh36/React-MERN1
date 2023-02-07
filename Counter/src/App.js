@@ -8,6 +8,17 @@ import { render } from "react-dom";
 
 
 class App extends React.Component{
+    constructor(props){
+        super(props)
+        this.handleIncrement = this.handleIncrement.bind(this)
+        this.handleDecrement = this.handleDecrement.bind(this)
+    }
+    handleIncrement(){
+        console.log('Increment ::')
+    }
+    handleDecrement(){
+        console.log('Decrement ::')
+    }
     render(){
         return <div>
             {/* Props Example */}
@@ -18,9 +29,9 @@ class App extends React.Component{
             <Button handleButtonFunction={()=> console.log('plus Button')} buttonText = '-'/> */}
 
             <Text displayText="Counter Application"/>
-            <Button/>
+            <Button btnClickHandler= {this.handleDecrement} btnText="-"/>
             <Text displayText="12"/>
-            <Button/>
+            <Button btnClickHandler= {this.handleIncrement} btnText="+"/>
 
 
         </div>
