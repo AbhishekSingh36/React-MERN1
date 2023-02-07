@@ -33,6 +33,9 @@ class App extends React.Component{
             <Display displayText = 'Display'/>  
             <Button handleButtonFunction={()=> console.log('plus Button')} buttonText = '-'/> */}
 
+            if(this.state.counter === 10) {
+                return <div>Congrats !! You have reached 10</div>
+            }
             <Text displayText="Counter Application"/>
             <Button btnClickHandler= {this.handleDecrement} btnText="-"/>
             <Text displayText= {this.state.counter}/>
