@@ -10,8 +10,9 @@ import { render } from "react-dom";
 class App extends React.Component{
     constructor(props){
         super(props)
-        this.handleIncrement = this.handleIncrement.bind(this)
-        this.handleDecrement = this.handleDecrement.bind(this)
+        this.state = {
+            counter: 0;
+        }
     }
     handleIncrement = () => {
         console.log('Increment ::')
@@ -30,7 +31,7 @@ class App extends React.Component{
 
             <Text displayText="Counter Application"/>
             <Button btnClickHandler= {this.handleDecrement} btnText="-"/>
-            <Text displayText="12"/>
+            <Text displayText= {this.state.counter}/>
             <Button btnClickHandler= {this.handleIncrement} btnText="+"/>
 
 
