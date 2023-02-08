@@ -47,7 +47,6 @@ class App extends React.Component {
                 </div> : <div>Congrats !! Your have reached 10</div>
             }
 
-
         </div>
     }
 }
