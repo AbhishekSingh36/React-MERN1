@@ -17,7 +17,8 @@ class App extends React.Component {
     
     render() {
         return <div>
-            
+            <label>First Name</label>
+            <input></input>
         </div>
     }
 }
