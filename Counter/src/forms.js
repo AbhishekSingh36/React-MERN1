@@ -18,7 +18,7 @@ class App extends React.Component {
     render() {
         return <div>
             <label>First Name</label>
-            <input></input>
+            <input type= 'text' value={} onChange={} />
         </div>
     }
 }
