@@ -11,14 +11,14 @@ class App extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            counter: 0
+            firstName: ''
         }
     }
     
     render() {
         return <div>
             <label>First Name</label>
-            <input type= 'text' value={} onChange={} />
+            <input type= 'text' value={this.state.firstName} onChange={} />
         </div>
     }
 }
