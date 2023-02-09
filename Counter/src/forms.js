@@ -14,11 +14,15 @@ class App extends React.Component {
             firstName: ''
         }
     }
-    
+    handleOnChange = (e) => {
+        this.setState ({
+            firstName: e.target.value
+        })
+    }
     render() {
         return <div>
             <label>First Name</label>
-            <input type= 'text' value={this.state.firstName} onChange={} />
+            <input type= 'text' value={this.state.firstName} onChange={this.handleOnChange} />
         </div>
     }
 }
