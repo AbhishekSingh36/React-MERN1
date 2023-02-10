@@ -16,12 +16,12 @@ class App extends React.Component {
     }
     handleIncrement = () => {
         this.setState((prevState) => ({
-            counter: prevState.counter + 2
+            counter: prevState.counter + 1
         }))
     }
     handleDecrement = () => {
         this.setState((prevState) => ({
-            counter: prevState.counter - 2
+            counter: prevState.counter - 1
         }))
     }
     render() {
