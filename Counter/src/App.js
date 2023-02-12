@@ -44,7 +44,7 @@ class App extends React.Component {
                     <Button btnClickHandler={this.handleDecrement} btnText="-" />
                     <Text displayText={this.state.counter} />
                     <Button btnClickHandler={this.handleIncrement} btnText="+" />
-                </div> : <div>Congrats Your have reached 10</div>
+                </div> : <div>Congrats - Your have reached 10</div>
             }
 
         </div>
