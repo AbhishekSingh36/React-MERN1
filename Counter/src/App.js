@@ -27,7 +27,7 @@ class App extends React.Component {
     render() {
         // Explicit conditional rendring
         if (this.state.counter === 10) {
-            return <div>Congrats !! You have reached 10</div>
+            return <div>Congrats You have reached 10</div>
         }
         return <div>
             {/* Props Example */}
