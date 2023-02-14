@@ -1,9 +1,10 @@
 import React from 'react';
 import './App.css';
+import Button from './Components/Button';
 
 const App = () => {
   return (
-    <div></div>
+    <Button btnHandler = {()=> console.log('Hello, This is Button')} btnText = "Options" />
   )
 }
 
