@@ -4,7 +4,10 @@ import Button from './Components/Button';
 
 const App = () => {
   return (
-    <Button btnHandler = {()=> console.log('Hello, This is Button')} btnText = "Options" />
+    <div>
+      <Button isDisabled={false} btnHandler = {()=> console.log('Hello, This is Button1')} btnText = "Options" />
+      <Button btnHandler = {()=> console.log('Hello, This is Button2')} btnBackground="red" btnText = "Options" />
+    </div>
   )
 }
 
