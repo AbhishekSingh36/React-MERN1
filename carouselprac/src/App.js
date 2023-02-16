@@ -10,7 +10,7 @@ const App = () => {
     setText('I am changed text1')
   }
   const handleChangeText2 = () => {
-    setText2('I am changed2')
+    setText2('I am changed Text2')
   }
   if(text === "Change text"){
     return <div>If condition</div>
