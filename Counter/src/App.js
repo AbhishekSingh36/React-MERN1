@@ -52,7 +52,7 @@ import { render } from "react-dom";
 // }
 
 function App(){
-    return <div>React implementation</div>
+    return <div>React implementation!</div>
 }
 
 export default App
