@@ -4,6 +4,7 @@ import {useState, useRef} from 'react'
 function App() {
   const [todoList, setTodoList] = useState([])
   const [currentTask, setCurrentTask] = useState('')
+  const inputTask = useRef(null)
   const addTask = () => {
     setTodoList([...todoList, currentTask]);
 
