@@ -51,8 +51,12 @@ import { render } from "react-dom";
 //     }
 // }
 
-function App(){
-    return <div>React implementation</div>
+const App  = () => {
+    return <div>
+        <button>Start</button>
+        <p>12</p>
+        <button>Stop</button>
+    </div>
 }
 
 export default App
