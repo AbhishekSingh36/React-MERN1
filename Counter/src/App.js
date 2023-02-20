@@ -53,7 +53,11 @@ import { render } from "react-dom";
 
 const App  = () => {
     return <div>
-        Counter Application
+        <h3>Counter Application</h3>
+        <button />
+        <p>Counter Value</p>
+        <button />
+
     </div>
 }
 
