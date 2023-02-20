@@ -8,8 +8,9 @@ import React from "react";
 //         //return <button onClick={this.props.handleButtonFunction}>{this.props.buttonText}</button>
 //     }
 // }
-const Button = () => {
-    return <button>My Button Component</button>
+const Button = (props) => {
+    const {btnText = "" , btnHandler = ''} = props
+    return <button onClick={btnHandler}>{btnText}</button>
 }
 
 export default Button;

@@ -54,9 +54,9 @@ import { render } from "react-dom";
 const App  = () => {
     return <div>
         <h3>Counter Application</h3>
-        <button />
+        <button btnText="Start" btnHandler="" />
         <p>Counter Value</p>
-        <button />
+        <button btnText="Stop" btnHandler="" />
 
     </div>
 }
