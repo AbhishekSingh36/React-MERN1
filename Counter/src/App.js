@@ -51,14 +51,22 @@ import { render } from "react-dom";
 //     }
 // }
 
+
+
 const App  = () => {
-    return <div>
+    const handleStart = () => {
+        console.log('Handle Start::')
+    }
+    const handleStop = () => {
+        console.log('Handle Stop::')
+    }
+    return (<div>
         <h3>Counter Application</h3>
         <button btnText="Start" btnHandler="" />
         <p>Counter Value</p>
         <button btnText="Stop" btnHandler="" />
 
-    </div>
+    </div>)
 }
 
 export default App
