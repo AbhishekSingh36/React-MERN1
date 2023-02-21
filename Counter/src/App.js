@@ -54,9 +54,10 @@ import './App.css';
 
 
 
-const App  = () => {
+const App = () => {
+
     
-    let counter = 0;
+    const [counter, setCounter] = useState(0);
     const handleStart = () => {
         console.log('Handle Start::')
         counter = counter + 1
@@ -66,13 +67,13 @@ const App  = () => {
         counter = counter - 1
     }
     return (
-    <div>
-        <h3>Counter Application</h3>
-        <button btnText="Start" btnHandler={handleStart} />
-        <p>Counter Value</p>
-        <button btnText="Stop" btnHandler={handleStop} />
+        <div>
+            <h3>Counter Application</h3>
+            <button btnText="Start" btnHandler={handleStart} />
+            <p>Counter Value</p>
+            <button btnText="Stop" btnHandler={handleStop} />
 
-    </div>
+        </div>
     )
 }
 
