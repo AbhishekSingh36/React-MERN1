@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Header from './components/Header';
 import Display from './components/Display';
 import Button from '../src/components/Button';
@@ -56,15 +56,15 @@ import './App.css';
 
 const App = () => {
 
-    
+
     const [counter, setCounter] = useState(0);
     const handleStart = () => {
         console.log('Handle Start::')
-        counter = counter + 1
+        setCounter(counter+1)
     }
     const handleStop = () => {
         console.log('Handle Stop::')
-        counter = counter - 1
+        setCounter(counter-1)
     }
     return (
         <div>
