@@ -4,6 +4,7 @@ import Display from './components/Display';
 import Button from '../src/components/Button';
 import Text from "./components/Text";
 import { render } from "react-dom";
+import './App.css';
 
 
 
@@ -54,19 +55,24 @@ import { render } from "react-dom";
 
 
 const App  = () => {
+    let counterValue = 0;
     const handleStart = () => {
         console.log('Handle Start::')
+        counter = counter + 1
     }
     const handleStop = () => {
         console.log('Handle Stop::')
+        counter = counter - 1
     }
-    return (<div>
+    return (
+    <div>
         <h3>Counter Application</h3>
-        <button btnText="Start" btnHandler="" />
+        <button btnText="Start" btnHandler={handleStart} />
         <p>Counter Value</p>
-        <button btnText="Stop" btnHandler="" />
+        <button btnText="Stop" btnHandler={handleStop} />
 
-    </div>)
+    </div>
+    )
 }
 
 export default App
