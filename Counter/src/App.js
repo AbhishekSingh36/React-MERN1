@@ -55,7 +55,8 @@ import './App.css';
 
 
 const App  = () => {
-    let counterValue = 0;
+    
+    let counter = 0;
     const handleStart = () => {
         console.log('Handle Start::')
         counter = counter + 1
