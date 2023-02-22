@@ -56,15 +56,19 @@ import './App.css';
 
 const App = () => {
 
-
+    const [intervalId, setIntervalId] = useState(0);
     const [counter, setCounter] = useState(0);
     const handleStart = () => {
+        setInterval(() => {
+            let interval = setInterval(()=> {
+                setCounter((prevVlaue)=> prevVlaue + 1)
+            })
+        },1000)
         console.log('Handle Start::')
         setCounter(counter+1)
     }
     const handleStop = () => {
-        console.log('Handle Stop::')
-        setCounter(counter-1)
+        clearInterval(intervalId)
     }
     return (
         <div>
