@@ -59,6 +59,7 @@ const App = () => {
     const [intervalId, setIntervalId] = useState(0);
     const [counter, setCounter] = useState(0);
     const handleStart = () => {
+        clearInterval(intervalId)
         setInterval(() => {
             let interval = setInterval(()=> {
                 setCounter((prevVlaue)=> prevVlaue + 1)
