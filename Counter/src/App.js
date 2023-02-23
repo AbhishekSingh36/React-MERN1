@@ -63,7 +63,7 @@ const App = () => {
         let intervalOneId = setInterval(() => {
             setCounter((prevValue) => prevValue + 1)
         }, 1000)
-        console.log('Handle Start! ::')
+        console.log('Handle Start ::')
         setIntervalId(intervalOneId)
     }
     const handleStop = () => {
