@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Header from './components/Header';
 import Display from './components/Display';
 import Button from '../src/components/Button';
@@ -60,13 +60,11 @@ const App = () => {
     const [counter, setCounter] = useState(0);
     const handleStart = () => {
         clearInterval(intervalId)
-        setInterval(() => {
-            let interval = setInterval(()=> {
-                setCounter((prevVlaue)=> prevVlaue + 1)
-            })
-        },1000)
-        console.log('Handle Start::')
-        setCounter(counter+1)
+        let intervalOneId = setInterval(() => {
+            setCounter((prevValue) => prevValue + 1)
+        }, 1000)
+        console.log('Handle Start! ::')
+        setIntervalId(intervalOneId)
     }
     const handleStop = () => {
         clearInterval(intervalId)
