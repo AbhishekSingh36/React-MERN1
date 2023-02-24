@@ -72,6 +72,7 @@ const App = () => {
     }
     const handlechange = (e) => {
         setCounterInputValue(e.target.value)
+        setCounter(e.target.value)
     }
     return (
         <div>
