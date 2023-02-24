@@ -58,6 +58,7 @@ const App = () => {
 
     const [intervalId, setIntervalId] = useState(0);
     const [counter, setCounter] = useState(0);
+    const [counterInputValue, setCounterInputValue] = useState(0)
     const handleStart = () => {
         clearInterval(intervalId)
         let intervalOneId = setInterval(() => {
@@ -69,9 +70,13 @@ const App = () => {
     const handleStop = () => {
         clearInterval(intervalId)
     }
+    const handlechange = (e) => {
+        setCounterInputValue(e.target.value)
+    }
     return (
         <div>
             <h3>Counter Application</h3>
+            <input value={setCounterInputValue} onChange={(e) => onChange(e)} />
             <button btnText="Start" btnHandler={handleStart} />
             <p>Counter Value</p>
             <button btnText="Stop" btnHandler={handleStop} />
