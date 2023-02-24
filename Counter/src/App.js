@@ -62,7 +62,14 @@ const App = () => {
     const handleStart = () => {
         clearInterval(intervalId)
         let intervalOneId = setInterval(() => {
-            setCounter((prevValue) => prevValue + 1)
+            setCounter((prevValue) => {
+                if (prevValue == 0) {
+                    clearInterval(intervalId)
+                    return 0
+                } else {
+                    return prevValue - 1
+                }
+            })
         }, 1000)
         console.log('Handle Start ::')
         setIntervalId(intervalOneId)
