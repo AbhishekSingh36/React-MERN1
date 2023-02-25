@@ -63,7 +63,7 @@ const App = () => {
         clearInterval(intervalId)
         let intervalOneId = setInterval(() => {
             setCounter((prevValue) => {
-                if (prevValue == 0) {
+                if (prevValue == 1) {
                     clearInterval(intervalId)
                     return 0
                 } else {
