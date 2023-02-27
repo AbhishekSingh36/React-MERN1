@@ -17,7 +17,7 @@ export default function App() {
     <div className="App">
       {count}
       <button onClick={handleIncrease}>Increase</button>
-      <Button variant="contained">Hello World</Button>;
+      
     </div>
   );
 }
