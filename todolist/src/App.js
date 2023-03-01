@@ -5,7 +5,8 @@ function App() {
   const [todoList, setTodoList] = useState([])
   const [currentTask, setCurrentTask] = useState('')
   const addTask = () => {
-    setTodoList([...todoList, currentTask])
+    setTodoList([...todoList, currentTask]);
+
   }
   return (
   <div className='App'>
@@ -15,6 +16,11 @@ function App() {
       <button onClick={addTask}>Add Task</button>
     </div>
     <hr />
+    <ul>
+      <li>
+        {todoList.map((val,key))}
+      </li>
+    </ul>
   </div>
   );
 }
