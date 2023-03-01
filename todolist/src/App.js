@@ -5,7 +5,7 @@ function App() {
   const [todoList, setTodoList] = useState([])
   const [currentTask, setCurrentTask] = useState('')
   const addTask = () => {
-
+    setTodoList([...todoList, currentTask])
   }
   return (
   <div className='App'>
