@@ -4,12 +4,15 @@ import {useState} from 'react'
 function App() {
   const [todoList, setTodoList] = useState([])
   const [currentTask, setCurrentTask] = useState('')
+  const addTask = () => {
+
+  }
   return (
   <div className='App'>
     <h1>ToDo List</h1>
     <div>
       <input type="text" placeholder='Task' onChange={(event) => {setCurrentTask(event.target.value)}}/>
-      <button>Add Task</button>
+      <button onClick={addTask}>Add Task</button>
     </div>
     <hr />
   </div>
