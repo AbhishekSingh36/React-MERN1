@@ -20,7 +20,7 @@ function App() {
       <li>
         {todoList.map((val,key)=>{
            return(
-            <li></li>
+            <li>{val}</li>
            )
         })}
       </li>
