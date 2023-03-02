@@ -28,7 +28,7 @@ const VideoCard = (props) => {
             <Typography variant="body2" color="text.secondary">
               {genre}
             </Typography>
-            <Typography gutterBottom variant="h6" component="div">
+            <Typography gutterBottom variant="h5" component="div">
               {title}
             </Typography>
             <Typography variant="body2" color="text.secondary">
