@@ -60,4 +60,7 @@ ul{
 li{
   list-style-type: noe;
   width: 300px;
+  height: 40px;
+  background-color: azure;
+  
 }
