@@ -55,5 +55,9 @@ button{
 ul{
   display: grid;
   place-items: center;
-  color: aqua;
+}
+
+li{
+  list-style-type: noe;
+  width: 300px;
 }
