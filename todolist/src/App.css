@@ -55,4 +55,5 @@ button{
 ul{
   display: grid;
   place-items: center;
+  color: aqua;
 }
