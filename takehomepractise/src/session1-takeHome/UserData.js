@@ -15,3 +15,14 @@ class UserData extends Component {
       }
     };
   }
+  showData = async (id) => {
+    let res = await axios
+      .get(`https://reqres.in/api/users/${id}`)
+      .catch(function (error) {
+        if (error.response) {
+          alert("Failed to fetch data");
+        } else {
+          console.log("Error", error.message);
+        }
+      });
+    }}
