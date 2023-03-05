@@ -51,3 +51,8 @@ button{
   width: 200px;
   height: 40px;
 }
+
+ul{
+  display: grid;
+  place-items: center;
+}
