@@ -16,7 +16,7 @@ const VideoCard = (props) => {
   } = props;
   return  (
     <Grid item>
-      <Card sx={{ maxWidth: 345, minWidth: 345, minHeight: 200 }}>
+      <Card sx={{ maxWidth: 345, minWidth: 344, minHeight: 200 }}>
         <CardActionArea>
           <CardMedia
             component="img"
