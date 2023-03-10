@@ -6,13 +6,13 @@ function App() {
     <div className="App">
       <h1>Built a Hero</h1>
       <label>Name: </label>
-      <input type='text' />
+      <input type='text' className='name'/>
       <label>Age: </label>
-      <input type='Number' />
+      <input type='Number' className='age' />
       <label>Height: </label>
-      <input type='text' />
+      <input type='text' className='height'/>
       <label>SuperPower: </label>
-      <input type='text' />
+      <input type='text' className='power'/>
     </div>
   );
 }
