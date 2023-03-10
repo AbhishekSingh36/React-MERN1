@@ -12,7 +12,7 @@ function App() {
       <label>Height: </label>
       <input type='text' className='height'/>
       <label>SuperPower: </label>
-      <input type='text' />
+      <input type='text' className='power'/>
     </div>
   );
 }
