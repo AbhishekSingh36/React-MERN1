@@ -4,6 +4,7 @@ import './App.css';
 function App() {
 const [name, setName] = useState('')
 const [age, setAge] = useState('0')
+const [height, setHeight] = useState('0') 
 
 
   return (
@@ -14,7 +15,7 @@ const [age, setAge] = useState('0')
       <label>Age: </label>
       <input type='Number' className='age' />
       <label>Height: </label>
-      <input type='text' className='height'/>
+      <input type='number ' className='height'/>
       <label>SuperPower: </label>
       <input type='text' className='power'/>
     </div>
