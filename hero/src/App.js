@@ -18,7 +18,7 @@ const [superPower, setsuperPower] = useState('')
       <label>Height: </label>
       <input type='number ' className='height'onChange={(event) => {setHeight(event.target.value)}}/>
       <label>SuperPower: </label>
-      <input type='text' className='power' />
+      <input type='text' className='power' onChange={(event) => {setsuperPower(event.target.value)}}/>
     </div>
   );
 }
