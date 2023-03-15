@@ -12,13 +12,13 @@ const [superPower, setsuperPower] = useState('')
     <div className="App">
       <h1>Built a Hero</h1>
       <label>Name: </label>
-      <input type='text' className='name'/>
+      <input type='text' className='name' onChange={(event) => {setName(event.target.value)}}/>
       <label>Age: </label>
-      <input type='Number' className='age' />
+      <input type='Number' className='age' onChange={(event) => {setAge(event.target.value)}}/>
       <label>Height: </label>
-      <input type='number ' className='height'/>
+      <input type='number ' className='height'onChange={(event) => {setHeight(event.target.value)}}/>
       <label>SuperPower: </label>
-      <input type='text' className='power'/>
+      <input type='text' className='power' />
     </div>
   );
 }
