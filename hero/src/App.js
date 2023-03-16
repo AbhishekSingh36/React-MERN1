@@ -28,6 +28,9 @@ const [displayCharacter, setDisplayCharacter] = useState(false)
         {displayCharacter && (
           <ul>
             <li>{name}</li>
+            <li>{age}</li>
+            <li>{height}</li>
+            <li>{superPower}</li>
           </ul>
         )}
       </div>
