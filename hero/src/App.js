@@ -22,12 +22,12 @@ const [displayCharacter, setDisplayCharacter] = useState(false)
       <label>SuperPower: </label>
       <input type='text' className='power' onChange={(event) => {setsuperPower(event.target.value)}}/>
         </div>
-      <button onClick={}>Display Character</button>
+      <button onClick={() => {setDisplayCharacter(true)}}>Display Character</button>
       <div>
         <h1>Hero Info</h1>
         {displayCharacter && (
           <ul>
-            <li></li>
+            <li>{name}</li>
           </ul>
         )}
       </div>
