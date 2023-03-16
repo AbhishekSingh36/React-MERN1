@@ -11,6 +11,7 @@ const [superPower, setsuperPower] = useState('')
   return (
     <div className="App">
       <h1>Built a Hero</h1>
+      <div>
       <label>Name: </label>
       <input type='text' className='name' onChange={(event) => {setName(event.target.value)}}/>
       <label>Age: </label>
@@ -19,6 +20,8 @@ const [superPower, setsuperPower] = useState('')
       <input type='number ' className='height'onChange={(event) => {setHeight(event.target.value)}}/>
       <label>SuperPower: </label>
       <input type='text' className='power' onChange={(event) => {setsuperPower(event.target.value)}}/>
+        </div>
+    
     </div>
   );
 }
