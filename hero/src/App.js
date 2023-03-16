@@ -29,8 +29,8 @@ const [displayCharacter, setDisplayCharacter] = useState(false)
           <ul>
             <li>Name: {name}</li>
             <li>Age: {age}</li>
-            <li>{height}</li>
-            <li>{superPower}</li>
+            <li>Height: {height}</li>
+            <li>SuperPower: {superPower}</li>
           </ul>
         )}
       </div>
