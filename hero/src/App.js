@@ -21,6 +21,7 @@ const [superPower, setsuperPower] = useState('')
       <label>SuperPower: </label>
       <input type='text' className='power' onChange={(event) => {setsuperPower(event.target.value)}}/>
         </div>
+      <button>Display Character</button>
     
     </div>
   );
