@@ -6,6 +6,7 @@ const [name, setName] = useState('')
 const [age, setAge] = useState('0')
 const [height, setHeight] = useState('0') 
 const [superPower, setsuperPower] = useState('')
+const [displayCharacter, setDisplayCharacter] = useState(false)
 
 
   return (
@@ -21,7 +22,15 @@ const [superPower, setsuperPower] = useState('')
       <label>SuperPower: </label>
       <input type='text' className='power' onChange={(event) => {setsuperPower(event.target.value)}}/>
         </div>
-      <button>Display Character</button>
+      <button onClick={}>Display Character</button>
+      <div>
+        <h1>Hero Info</h1>
+        {displayCharacter && (
+          <ul>
+            <li></li>
+          </ul>
+        )}
+      </div>
     
     </div>
   );
