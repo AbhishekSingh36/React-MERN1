@@ -10,7 +10,7 @@ function App() {
       <input type="text" placeholder='Task'/>
       <button>Add Task</button>
     </div>
-
+    <hr />
   </div>
   );
 }
