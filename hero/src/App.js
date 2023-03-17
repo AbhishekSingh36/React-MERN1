@@ -30,7 +30,7 @@ const [displayCharacter, setDisplayCharacter] = useState(false)
             <li>Name: {name}</li>
             <li>Age: {age}</li>
             <li>Height: {height}</li>
-            <li>SuperPower: {superPower}</li>
+            <li>Super-Power: {superPower}</li>
           </ul>
         )}
       </div>
