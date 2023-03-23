@@ -13,7 +13,7 @@ function App() {
   <div className='App'>
     <h1>ToDo List</h1>
     <div>
-      <input type="text" placeholder='Task' onChange={(event) => {setCurrentTask(event.target.value)}}/>
+      <input ref={inputTask} type="text" placeholder='Task' onChange={(event) => {setCurrentTask(event.target.value)}}/>
       <button onClick={addTask}>Add Task</button>
     </div>
     <hr />
