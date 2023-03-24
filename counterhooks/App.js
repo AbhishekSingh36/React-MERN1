@@ -3,5 +3,5 @@ import CounterHooks from './counterhooks'
 
 
 export default function App() {
-  return <CounterHooks diff={3} />;
+  return <CounterHooks diff={9} />;
 }
