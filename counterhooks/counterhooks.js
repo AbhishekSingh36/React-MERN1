@@ -14,8 +14,8 @@ const CounterHooks = ({diff}) => {
     return (
         <div>
             <h1 className="counter-display">{count}</h1>
-            <button className={increment}>+12{diff}</button>
-            <button className={decrement}>-12{diff}</button>
+            <button className={increment}>+16{diff}</button>
+            <button className={decrement}>-16{diff}</button>
         </div>
     )
 }
