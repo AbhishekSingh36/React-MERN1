@@ -11,7 +11,7 @@ const [displayCharacter, setDisplayCharacter] = useState(false)
 
   return (
     <div className="App">
-      <h1>Built a Hero character</h1>
+      <h1>Built a Hero</h1>
       <div>
       <label>Name: </label>
       <input type='text' className='name' onChange={(event) => {setName(event.target.value)}}/>
