@@ -27,7 +27,7 @@ const [displayCharacter, setDisplayCharacter] = useState(false)
         <h1>Hero Info</h1>
         {displayCharacter && (
           <ul>
-            <li>Name: {name}</li>
+            <li>Name goes here: {name}</li>
             <li>Age: {age}</li>
             <li>Height: {height}</li>
             <li>Super Power: {superPower}</li>
