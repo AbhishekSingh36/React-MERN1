@@ -17,7 +17,7 @@ const [displayCharacter, setDisplayCharacter] = useState(false)
       <input type='text' className='name' onChange={(event) => {setName(event.target.value)}}/>
       <label>Age: </label>
       <input type='Number' className='age' onChange={(event) => {setAge(event.target.value)}}/>
-      <label>Height: </label>
+      <label>Height label: </label>
       <input type='number ' className='height'onChange={(event) => {setHeight(event.target.value)}}/>
       <label>SuperPower: </label>
       <input type='text' className='power' onChange={(event) => {setsuperPower(event.target.value)}}/>
