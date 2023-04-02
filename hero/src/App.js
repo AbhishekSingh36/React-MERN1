@@ -15,11 +15,11 @@ const [displayCharacter, setDisplayCharacter] = useState(false)
       <div>
       <label>Name: </label>
       <input type='text' className='name' onChange={(event) => {setName(event.target.value)}}/>
-      <label>Age label: </label>
+      <label>Age: </label>
       <input type='Number' className='age' onChange={(event) => {setAge(event.target.value)}}/>
-      <label>Height label: </label>
+      <label>Height: </label>
       <input type='number ' className='height'onChange={(event) => {setHeight(event.target.value)}}/>
-      <label>SuperPower label: </label>
+      <label>SuperPower: </label>
       <input type='text' className='power' onChange={(event) => {setsuperPower(event.target.value)}}/>
         </div>
       <button onClick={() => {setDisplayCharacter(true)}}>Display character</button>
