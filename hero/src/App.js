@@ -19,7 +19,7 @@ const [displayCharacter, setDisplayCharacter] = useState(false)
       <input type='Number' className='age' onChange={(event) => {setAge(event.target.value)}}/>
       <label>Height label: </label>
       <input type='number ' className='height'onChange={(event) => {setHeight(event.target.value)}}/>
-      <label>SuperPower: </label>
+      <label>SuperPower label: </label>
       <input type='text' className='power' onChange={(event) => {setsuperPower(event.target.value)}}/>
         </div>
       <button onClick={() => {setDisplayCharacter(true)}}>Display character</button>
