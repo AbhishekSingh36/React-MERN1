@@ -15,7 +15,7 @@ const [displayCharacter, setDisplayCharacter] = useState(false)
       <div>
       <label>Name: </label>
       <input type='text' className='name' onChange={(event) => {setName(event.target.value)}}/>
-      <label>Age: </label>
+      <label>Age label: </label>
       <input type='Number' className='age' onChange={(event) => {setAge(event.target.value)}}/>
       <label>Height label: </label>
       <input type='number ' className='height'onChange={(event) => {setHeight(event.target.value)}}/>
