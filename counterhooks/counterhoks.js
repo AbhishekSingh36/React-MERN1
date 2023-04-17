@@ -4,7 +4,7 @@ const CounterHooks = ({diff}) => {
     const [count,setCount] = useState(0)
 
     const increment = () => {
-        
+        setCount(count + diff)
     }
     
 
