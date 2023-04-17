@@ -7,7 +7,7 @@ const CounterHooks = ({diff}) => {
         setCount(count + diff)
     }
     const decrement = () => {
-        
+        setCount(count - diff)
     }
     
 
