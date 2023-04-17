@@ -1,6 +1,10 @@
 import React,{useState} from "react";
 
 const CounterHooks = ({diff}) => {
+    const [count,setCount] = useState(0)
+
+    
+    
 
     return (
         <div>
