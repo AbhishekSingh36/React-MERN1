@@ -20,4 +20,4 @@ const CounterHooks = ({diff}) => {
     )
 }
 
-export default CounterHooks
+export default CounterHooks;

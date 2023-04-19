@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import CounterHooks from "./s3/CounterHooks";
+import CounterHooks from './counterhooks'
 
 
 export default function App() {
