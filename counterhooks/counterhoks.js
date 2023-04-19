@@ -19,3 +19,5 @@ const CounterHooks = ({diff}) => {
         </div>
     )
 }
+
+export default CounterHooks
