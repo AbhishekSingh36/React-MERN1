@@ -99,6 +99,7 @@ export default function BookAppointment() {
                   name="email"
                   id="email"
                   className="form-control"
+                  placeholder="email"
                   value={appointmentData.email}
                   onChange={(e) => handleInputChange(e)}
                 />
