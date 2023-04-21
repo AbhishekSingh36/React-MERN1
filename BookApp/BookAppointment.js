@@ -107,7 +107,7 @@ export default function BookAppointment() {
 
               {/* Appointment details */}
               <div>
-                <h5>Doctor</h5>
+                <h5>Doctor deatils</h5>
                 <select
                   className="form-select"
                   name="selectedDoctor"
