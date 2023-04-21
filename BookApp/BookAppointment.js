@@ -84,6 +84,7 @@ export default function BookAppointment() {
                   name="lastName"
                   id="lastName"
                   className="form-control"
+                  placeholder="lastName"
                   value={appointmentData.lName}
                   onChange={(e) => handleInputChange(e)}
                 />
