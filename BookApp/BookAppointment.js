@@ -71,6 +71,7 @@ export default function BookAppointment() {
                   name="firstName"
                   id="firstName"
                   className="form-control"
+                  placeholder="firstName"
                   value={appointmentData.fName}
                   onChange={(e) => handleInputChange(e)}
                 />
