@@ -1,7 +1,7 @@
 import React,{useState} from "react";
 
 const CounterHooks = ({diff}) => {
-    const [count,setCount] = useState(6)
+    const [count,setCount] = useState(0)
 
     const increment = () => {
         setCount(count + diff)
@@ -14,8 +14,8 @@ const CounterHooks = ({diff}) => {
     return (
         <div>
             <h1 className="counter-display">{count}</h1>
-            <button className={increment}>+45{diff}</button>
-            <button className={decrement}>-45{diff}</button>
+            <button className={increment}>+1{diff}</button>
+            <button className={decrement}>-1{diff}</button>
         </div>
     )
 }
