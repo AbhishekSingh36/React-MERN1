@@ -21,56 +21,7 @@
         "releaseDate": "27 Apr 2020",
   
         "id": "60211cb602edbc33d4214360"
-      },
-  
-      {
-        "votes": {
-          "upVotes": 6,
-  
-          "downVotes": 4
-        },
-  
-        "previewImage": "https://i.ytimg.com/vi/RQdxHi4_Pvc/mqdefault.jpg",
-  
-        "viewCount": 9,
-  
-        "videoLink": "youtube.com/embed/RQdxHi4_Pvc",
-  
-        "title": "The Universal S",
-  
-        "genre": "Comedy",
-  
-        "contentRating": "12+",
-  
-        "releaseDate": "10 Aug 2019",
-  
-        "id": "60211cb602edbc33d421434b"
-      },
-  
-      {
-        "votes": {
-          "upVotes": 2,
-  
-          "downVotes": 2
-        },
-  
-        "previewImage": "https://i.ytimg.com/vi/kd2KEHvK-q8/mqdefault.jpg",
-  
-        "viewCount": 4,
-  
-        "videoLink": "youtube.com/embed/kd2KEHvK-q8",
-  
-        "title": "The Vanishing of Flight 370",
-  
-        "genre": "Movies",
-  
-        "contentRating": "12+",
-  
-        "releaseDate": "14 Apr 2019",
-  
-        "id": "60211cb602edbc33d4214347"
-      },
-  
+      }
       {
         "votes": {
           "upVotes": 7,
