@@ -16,7 +16,8 @@ function VideoSearcher(props) {
   };
   useEffect(() => {
     fetchVideos();
-  });
+  },[]);
+//   This will make it render once
   return
 }
 
