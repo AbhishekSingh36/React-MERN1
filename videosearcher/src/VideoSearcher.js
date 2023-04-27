@@ -9,7 +9,7 @@ function VideoSearcher(props) {
   // console.log(videos);
   const [videos, setVideos] = useState([]);
   const fetchVideos = async () => {
-
+    let url = "https://content-xflix-backend.azurewebsites.net/v1/videos";
     const response = await axios.get(url);
     const listOfVideos = response.data.video;
     setVideos(listOfVideos);
