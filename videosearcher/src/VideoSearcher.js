@@ -14,7 +14,9 @@ function VideoSearcher(props) {
     const listOfVideos = response.data.video;
     setVideos(listOfVideos);
   };
-  
+  useEffect(() => {
+    fetchVideos();
+  }, []);
   return
 }
 
