@@ -16,7 +16,7 @@ function VideoSearcher(props) {
   };
   useEffect(() => {
     fetchVideos();
-  }, []);
+  });
   return
 }
 
