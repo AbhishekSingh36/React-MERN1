@@ -18,7 +18,17 @@ function VideoSearcher(props) {
     fetchVideos();
   },[]);
 //   This will make it render once
-  return
+return (
+    <Grid container spacing={2}>
+      {videos.map((video) => {
+        const { id, previewImage, genre, title, releaseDate } = video;
+        return (
+    
+        );
+      })}
+    </Grid>
+  );
 }
+
 
 export default VideoSearcher;
