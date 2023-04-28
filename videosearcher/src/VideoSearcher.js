@@ -24,14 +24,18 @@ return (
         const { id, previewImage, genre, title, releaseDate } = video;
         return (
           <Grid item key={id} xs={12} sm={6} md={4} lg={4}>
-            
+            <VideoCard
+              imgLink={previewImage}
+              genre={genre}
+              title={title}
+              releaseDate={releaseDate}
+            />
           </Grid>
         );
       })}
     </Grid>
   );
 }
-
 
 
 export default VideoSearcher;
