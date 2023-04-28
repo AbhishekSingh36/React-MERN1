@@ -16,9 +16,8 @@ function VideoSearcher(props) {
   };
   useEffect(() => {
     fetchVideos();
-  },[]);
-//   This will make it render once
-return (
+  }, []);
+  return (
     <Grid container spacing={2}>
       {videos.map((video) => {
         const { id, previewImage, genre, title, releaseDate } = video;
@@ -38,4 +37,3 @@ return (
 }
 
 
-export default VideoSearcher;
