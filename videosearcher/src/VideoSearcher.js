@@ -36,4 +36,4 @@ function VideoSearcher(props) {
   );
 }
 
-
+export default VideoSearcher;
